@@ -4,6 +4,7 @@ const merge = require('webpack-merge');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CnameWebpackPlugin = require('cname-webpack-plugin');
 
 const common = require('./webpack.config.common.js');
 
@@ -38,6 +39,9 @@ module.exports = merge(common, {
       cssProcessor: cssnano,
       cssProcessorOptions: { discardComments: { removeAll: true } },
       canPrint: true,
+    }),
+    new CnameWebpackPlugin({
+      domain: 'trabajo-remoto.com',
     }),
   ],
 });
