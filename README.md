@@ -1,39 +1,97 @@
-# 🚀 Static HTML Webpack Boilerplate
-[![GitHub version](https://badge.fury.io/gh/erickzhao%2Fstatic-html-webpack-boilerplate.svg)](https://badge.fury.io/gh/erickzhao%2Fstatic-html-webpack-boilerplate)
-[![Build Status](https://api.travis-ci.org/erickzhao/static-html-webpack-boilerplate.svg?branch=master)](https://travis-ci.org/erickzhao/static-html-webpack-boilerplate)
-[![Dev Dependencies](https://david-dm.org/erickzhao/static-html-webpack-boilerplate/dev-status.svg)](https://david-dm.org/erickzhao/static-html-webpack-boilerplate?type=dev)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a81c78b2255343a2a1c86abb564431a9)](https://app.codacy.com/app/erickzhao/static-html-webpack-boilerplate?utm_source=github.com&utm_medium=referral&utm_content=erickzhao/static-html-webpack-boilerplate&utm_campaign=Badge_Grade_Dashboard)
-
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <img width="200" height="200" src="https://i.imgur.com/y8m5pkQ.png">
+  <a href="https://www.gatsbyjs.org">
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  </a>
 </p>
+<h1 align="center">
+  Gatsby's default starter
+</h1>
 
-Enjoy hand-writing your HTML? Keep it old-school with modern build tools. This boilerplate setup makes it easier to write your own styling, scripts, and mark-up.
+Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
-## ✨ Features
+_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
-- Write SCSS and modern JavaScript code in `src` and build minified, transpiled code for production in `dist`
-- Continuous integration with linting tests and deploying to `gh-pages`
-- Live reloading with webpack-dev-server
-- ES6+ to ES5 transpilation, bundling, and minification
-- SCSS to CSS transpilation, bundling, autoprefixing, and minification
-- Automatic copying of HTML and static assets from `src` to `dist` folders
-- Linting for styles and scripts
+## 🚀 Quick start
 
-## 🛠 Usage
+1.  **Create a Gatsby site.**
 
-- Use this template on GitHub or download the latest release from the [Releases page](https://github.com/erickzhao/static-html-webpack-boilerplate/releases).
-- Write all your ES2015+ Javascript code in `src/js` and SCSS styling in `src/style`. Store static assets in `src/static`. Organize HTML files the way you like.
-- Available commands:
-  - `npm run build`: Build files to the `dist` folder. Transpiles down to ES5 and bundles all JS into `app.bundle.js`. Transpiles SCSS to CSS and adds prefixing into `style.bundle.css`. Copies static assets and HTML over, and bundled CSS and JS gets added to HTML file.
-  - `npm run start:dev`: Run `webpack-dev-server` at `localhost:9000`. Includes live reloading on any Javascript/SCSS/HTML changes.
-  - `npm run start`: Builds files and runs a local production server on `localhost:8080` with `http-server`.
-  - `npm run run lint:js`: Lints JS with ESLint.
-  - `npm run lint:styles`: Lints SCSS stylesheets with stylelint.
-  - `npm run lint:html`: Lints HTML for a11y issues using pa11y.
-  
-## 🔄 Continuous Integration
+    Use the Gatsby CLI to create a new site, specifying the default starter.
 
-This boilerplate contains integration with [Travis CI](https://travis-ci.org/). The build system runs all linting scripts and deploys to GitHub pages upon push to the `master` branch. However, note that this deployment flow only works for Project Pages, as User and Organization pages [only support the master branch flow](https://help.github.com/articles/user-organization-and-project-pages/).
+    ```shell
+    # create a new Gatsby site using the default starter
+    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    ```
 
-For more information on how to set up alternative deployment processes, check out the [Travis CI documentation on deployment](https://docs.travis-ci.com/user/deployment). The service can deploy to dozens of cloud providers, including Heroku, AWS, and Firebase.
+1.  **Start developing.**
+
+    Navigate into your new site’s directory and start it up.
+
+    ```shell
+    cd my-default-starter/
+    gatsby develop
+    ```
+
+1.  **Open the source code and start editing!**
+
+    Your site is now running at `http://localhost:8000`!
+
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+
+    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+
+## 🧐 What's inside?
+
+A quick look at the top-level files and directories you'll see in a Gatsby project.
+
+    .
+    ├── node_modules
+    ├── src
+    ├── .gitignore
+    ├── .prettierrc
+    ├── gatsby-browser.js
+    ├── gatsby-config.js
+    ├── gatsby-node.js
+    ├── gatsby-ssr.js
+    ├── LICENSE
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
+
+1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+
+2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+
+3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+
+4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+
+5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+
+6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+
+7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+
+8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+
+9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+
+10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+
+11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+
+12. **`README.md`**: A text file containing useful reference information about your project.
+
+## 🎓 Learning Gatsby
+
+Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+
+- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+
+- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+
+## 💫 Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+
+<!-- AUTO-GENERATED-CONTENT:END -->
